@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EELS_EndToEnd_Scripts" duration-ms="44026" started-at="2016-09-15T10:09:07Z" finished-at="2016-09-15T10:09:51Z">
+    <groups>
+    </groups>
+    <test name="IntegrationDemo" duration-ms="44026" started-at="2016-09-15T10:09:07Z" finished-at="2016-09-15T10:09:51Z">
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633@7cdbc5d3]" name="beforeMethod" is-config="true" duration-ms="38820" started-at="2016-09-15T15:39:07Z" finished-at="2016-09-15T15:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SignupPage_Multiple_Field_Blank()[pri:0, instance:r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633@7cdbc5d3]" name="SignupPage_Multiple_Field_Blank" duration-ms="2717" started-at="2016-09-15T15:39:46Z" finished-at="2016-09-15T15:39:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignupPage_Multiple_Field_Blank -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633@7cdbc5d3]" name="afterMethod" is-config="true" duration-ms="2458" started-at="2016-09-15T15:39:49Z" finished-at="2016-09-15T15:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignupPage_Multiple_Field_Blank status=SUCCESS method=Trident_SignupPage_Blank_Field_Validation_85633.SignupPage_Multiple_Field_Blank()[pri:0, instance:r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633@7cdbc5d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633 -->
+    </test> <!-- IntegrationDemo -->
+  </suite> <!-- EELS_EndToEnd_Scripts -->
+</testng-results>

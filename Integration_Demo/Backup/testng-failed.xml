@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EELS_EndToEnd_Scripts]">
+  <test name="Release04(failed)">
+    <classes>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="SignupPage_Multiple_Field_Blank"/>
+        </methods>
+      </class> <!-- r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_85633 -->
+    </classes>
+  </test> <!-- Release04(failed) -->
+</suite> <!-- Failed suite [EELS_EndToEnd_Scripts] -->
