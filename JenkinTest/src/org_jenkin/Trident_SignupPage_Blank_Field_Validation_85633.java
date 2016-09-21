@@ -27,7 +27,7 @@ public class Trident_SignupPage_Blank_Field_Validation_85633 {
 	 public void beforeMethod() throws InterruptedException {
 	      DOMConfigurator.configure("log4j.xml");   
 	      SignUpPageController Controller = new SignUpPageController();
-	     Controller.openURL("Chrome");
+	     Controller.openURL("FireFox");
 	      Log.info("Portal Application Launched");
 	     Controller.maximizeURL();        
 	    // Controller.waitForLoad();

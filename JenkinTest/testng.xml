@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!-- <suite name="CARNIVAL" parallel="tests" thread-count="200">> --> 
 <suite name="Suite">
-  <test name="Test">
-  <classes>
-        <class name="org_jenkin.Trident_SignupPage_Blank_Field_Validation_85633"/>
-   </classes>
+<test name="Test">
+<classes>
+<class name="org_jenkin.Trident_SignupPage_Blank_Field_Validation_85633"/>
+</classes>
 </test> 
-  </suite>
+</suite>

@@ -1,4 +1,4 @@
-set projectLocation=C:\Users\vandana.c.singh\workspace\Jenkins\JenkinTest
+set projectLocation=C:\Program Files (x86)\Jenkins\workspace\GitJenkin
 cd %projectLocation%
 set classpath=%projectLocation%\bin;%projectLocation%\lib\*
 java org.testng.TestNG %projectLocation%\testng.xml
