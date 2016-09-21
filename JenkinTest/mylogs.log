@@ -1,0 +1,40 @@
+2016-09-20 16:43:17 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2016-09-20 16:43:17 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2016-09-20 16:43:17 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:14643][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2016-09-20 16:43:17 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:14643][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2016-09-20 16:43:17 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:14643
+2016-09-20 16:43:17 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:14643
+2016-09-20 16:43:17 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:59380<->127.0.0.1:14643
+2016-09-20 16:43:17 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-0: set socket timeout to 10800000
+2016-09-20 16:43:17 DEBUG MainClientExec:255 - Executing request POST /session HTTP/1.1
+2016-09-20 16:43:17 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2016-09-20 16:43:17 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2016-09-20 16:43:17 DEBUG headers:135 - http-outgoing-0 >> POST /session HTTP/1.1
+2016-09-20 16:43:17 DEBUG headers:138 - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+2016-09-20 16:43:17 DEBUG headers:138 - http-outgoing-0 >> Content-Length: 122
+2016-09-20 16:43:17 DEBUG headers:138 - http-outgoing-0 >> Host: localhost:14643
+2016-09-20 16:43:17 DEBUG headers:138 - http-outgoing-0 >> Connection: Keep-Alive
+2016-09-20 16:43:17 DEBUG headers:138 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+2016-09-20 16:43:17 DEBUG headers:138 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "POST /session HTTP/1.1[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "Content-Length: 122[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:14643[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:86 - http-outgoing-0 >> "{"desiredCapabilities":{"browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","platform":"ANY"}}"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 << "Content-Length:249[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 << "Connection:close[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2016-09-20 16:43:17 DEBUG wire:86 - http-outgoing-0 << "{"sessionId":"7f9c904d1c99298426c74b1c4883c450","status":13,"value":{"message":"unknown error: cannot find Chrome binary\n  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64)"}}"
+2016-09-20 16:43:17 DEBUG headers:124 - http-outgoing-0 << HTTP/1.1 200 OK
+2016-09-20 16:43:17 DEBUG headers:127 - http-outgoing-0 << Content-Length:249
+2016-09-20 16:43:17 DEBUG headers:127 - http-outgoing-0 << Content-Type:application/json; charset=utf-8
+2016-09-20 16:43:17 DEBUG headers:127 - http-outgoing-0 << Connection:close
+2016-09-20 16:43:17 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-0: Close connection
+2016-09-20 16:43:17 DEBUG MainClientExec:103 - Connection discarded
+2016-09-20 16:43:17 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:14643][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
