@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="true">
+    <classes>
+      <class name="jenkins.TestTrident_SignupPage_Invalid_Email_Address_85630">
+        <methods>
+          <include name="SignupPage_Invalid_Email_Address"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class>
+      <class name="jenkins.TestTrident_SignupPage_Blank_Field_Validation_85633">
+        <methods>
+          <include name="SignupPage_Multiple_Field_Blank"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

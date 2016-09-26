@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EELS_EndToEnd_Scripts" duration-ms="30334" started-at="2016-09-23T05:23:03Z" finished-at="2016-09-23T05:23:33Z">
+    <groups>
+    </groups>
+    <test name="IntegrationDemo" duration-ms="30334" started-at="2016-09-23T05:23:03Z" finished-at="2016-09-23T05:23:33Z">
+      <class name="jenkins.Trident_SignupPage_Blank_Field_Validation_85633">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:jenkins.Trident_SignupPage_Blank_Field_Validation_85633@cb644e]" name="beforeMethod" is-config="true" duration-ms="30223" started-at="2016-09-23T10:53:03Z" finished-at="2016-09-23T10:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SignupPage_Multiple_Field_Blank()[pri:0, instance:jenkins.Trident_SignupPage_Blank_Field_Validation_85633@cb644e]" name="SignupPage_Multiple_Field_Blank" duration-ms="9" started-at="2016-09-23T10:53:33Z" finished-at="2016-09-23T10:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignupPage_Multiple_Field_Blank -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:jenkins.Trident_SignupPage_Blank_Field_Validation_85633@cb644e]" name="afterMethod" is-config="true" duration-ms="37" started-at="2016-09-23T10:53:33Z" finished-at="2016-09-23T10:53:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignupPage_Multiple_Field_Blank status=SUCCESS method=Trident_SignupPage_Blank_Field_Validation_85633.SignupPage_Multiple_Field_Blank()[pri:0, instance:jenkins.Trident_SignupPage_Blank_Field_Validation_85633@cb644e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- jenkins.Trident_SignupPage_Blank_Field_Validation_85633 -->
+    </test> <!-- IntegrationDemo -->
+  </suite> <!-- EELS_EndToEnd_Scripts -->
+</testng-results>
