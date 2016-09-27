@@ -14,12 +14,14 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 
 public class Binding {
        
-     public static void main() throws IOException, APIException {
-    	 String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
+     public static void main(String args) throws IOException, APIException {
+    	 System.out.println("The path imported from excel is "+ args);
+    	// String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
+    	 String path = args;
   		System.out.println("Current path is "+path);
 
  		//path = path.replaceAll("target/classes/", "target/surefire-reports/");
- 		path = "C:/Program Files (x86)/Jenkins/workspace/NewJenkinTest/NewJenkinTest/target/surefire-reports/";
+ 		//path = "C:/Program Files (x86)/Jenkins/workspace/NewJenkinTest/NewJenkinTest/target/surefire-reports/";
   		System.out.println("Binding file looking for report in " +path);
  		System.out.println(path + "Report.xlsx");
  		File excel = new File(path + "Report.xlsx");  

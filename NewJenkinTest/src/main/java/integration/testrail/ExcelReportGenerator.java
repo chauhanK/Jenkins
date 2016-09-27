@@ -18,7 +18,7 @@ import org.xml.sax.SAXException;
 
 public class ExcelReportGenerator {
 
-	public void generateExcelReport(String destFileName) throws ParserConfigurationException, SAXException, IOException	
+	public static String generateExcelReport(String destFileName) throws ParserConfigurationException, SAXException, IOException	
 	{		
 		
 		String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
@@ -107,13 +107,15 @@ for(int i = 0; i < test_list.getLength(); i++){
 	book.write(fout);
 	fout.close();
 	System.out.println("Report Generated at " + path);
-	
+	return path;
 	}
 
-	public static void main(String[] args) throws IOException, APIException {		
+	public static void main(String[] args) throws IOException, APIException {	
+		String path = null;
 		try
 		{
-			new ExcelReportGenerator().generateExcelReport("Report.xlsx");
+			path = generateExcelReport("Report.xlsx");
+					//new ExcelReportGenerator().generateExcelReport("Report.xlsx");
 					} catch (ParserConfigurationException e){
 			e.printStackTrace();
 		} catch (SAXException e){
@@ -121,8 +123,8 @@ for(int i = 0; i < test_list.getLength(); i++){
 		} catch (IOException e){
 			e.printStackTrace();
 		}
-	//Binding bind = new Binding();
-	//bind.main();
+	Binding bind = new Binding();
+	bind.main(path);
 	
 	//File srcDir = new File("C:/Users/rishi.a.garg/workspace/TestAutomation/Integration_Demo/test-output");
 //	File destDir = new File("C:/Users/rishi.a.garg/workspace/TestAutomation/Integration_Demo/Backup/Backup+ " + new SimpleDateFormat("_dd-MM-yyyy_hh-mm-ss").format(new GregorianCalendar().getTime()));
