@@ -23,7 +23,8 @@ public class ExcelReportGenerator {
 		
 		String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
 		System.out.println(path);
-		path = path.replaceAll("classes/", "surefire-reports/");
+		//path = path.replaceAll("classes/", "surefire-reports/");
+		path = "C:/Program Files (x86)/Jenkins/workspace/NewJenkinTest/NewJenkinTest/target/surefire-reports/";
 		System.out.println(path);
 		File xmlFile = new File(path + "testng-results.xml");
 		
