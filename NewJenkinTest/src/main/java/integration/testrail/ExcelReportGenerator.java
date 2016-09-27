@@ -22,9 +22,10 @@ public class ExcelReportGenerator {
 	{		
 		
 		String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
-		path = path.replaceAll("classes/", "");
 		System.out.println(path);
-		File xmlFile = new File(path + "surefire-reports/testng-results.xml");
+		path = path.replaceAll("classes/", "surefire-reports/");
+		System.out.println(path);
+		File xmlFile = new File(path + "testng-results.xml");
 		
 	System.out.println(xmlFile.isFile());
 	DocumentBuilderFactory fact = DocumentBuilderFactory.newInstance();
