@@ -103,7 +103,7 @@ for(int i = 0; i < test_list.getLength(); i++){
 	FileOutputStream fout = new FileOutputStream(path + destFileName);
 	book.write(fout);
 	fout.close();
-	System.out.println("Report Generated");
+	System.out.println("Report Generated at " + path);
 	
 	}
 
@@ -111,7 +111,7 @@ for(int i = 0; i < test_list.getLength(); i++){
 		try
 		{
 			new ExcelReportGenerator().generateExcelReport("Report.xlsx");
-		} catch (ParserConfigurationException e){
+					} catch (ParserConfigurationException e){
 			e.printStackTrace();
 		} catch (SAXException e){
 			e.printStackTrace();

@@ -16,8 +16,10 @@ public class Binding {
        
      public static void main() throws IOException, APIException {
     	 String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
- 		path = path.replaceAll("target/classes/", "target/");
- 		System.out.println(path);
+  		System.out.println("Current path is "+path);
+
+ 		path = path.replaceAll("target/classes/", "target/surefire-reports/");
+ 		System.out.println("Binding file looking for report in " +path);
  		System.out.println(path + "Report.xlsx");
  		File excel = new File(path + "Report.xlsx");  
  		
