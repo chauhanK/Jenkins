@@ -23,8 +23,10 @@ public class ExcelReportGenerator {
 		
 		String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
 		System.out.println(path);
-		//path = path.replaceAll("classes/", "surefire-reports/");
-		path = "C:/Program Files (x86)/Jenkins/workspace/NewJenkinTest/NewJenkinTest/target/surefire-reports/";
+		path = path.replaceAll("classes/", "surefire-reports/");
+		path = path.replaceAll("%20/", " /");
+
+		//path = "C:/Program Files (x86)/Jenkins/workspace/NewJenkinTest/NewJenkinTest/target/surefire-reports/";
 		System.out.println(path);
 		File xmlFile = new File(path + "testng-results.xml");
 		
@@ -119,8 +121,8 @@ for(int i = 0; i < test_list.getLength(); i++){
 		} catch (IOException e){
 			e.printStackTrace();
 		}
-	Binding bind = new Binding();
-	bind.main();
+	//Binding bind = new Binding();
+	//bind.main();
 	
 	//File srcDir = new File("C:/Users/rishi.a.garg/workspace/TestAutomation/Integration_Demo/test-output");
 //	File destDir = new File("C:/Users/rishi.a.garg/workspace/TestAutomation/Integration_Demo/Backup/Backup+ " + new SimpleDateFormat("_dd-MM-yyyy_hh-mm-ss").format(new GregorianCalendar().getTime()));
