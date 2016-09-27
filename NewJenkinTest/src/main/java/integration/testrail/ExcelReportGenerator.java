@@ -24,7 +24,7 @@ public class ExcelReportGenerator {
 		String path = ExcelReportGenerator.class.getClassLoader().getResource("./").getPath();
 		System.out.println(path);
 		path = path.replaceAll("classes/", "surefire-reports/");
-		path = path.replaceAll("%20/", " /");
+		path = path.replaceAll("%20", " ");
 
 		//path = "C:/Program Files (x86)/Jenkins/workspace/NewJenkinTest/NewJenkinTest/target/surefire-reports/";
 		System.out.println(path);
