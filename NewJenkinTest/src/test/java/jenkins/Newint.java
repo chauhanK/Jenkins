@@ -1,37 +1,37 @@
 package jenkins;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Newint {
-	WebDriver driver;
+	WebDriver driver = new ChromeDriver();
 	
 	@BeforeClass
 	public void setUp() {
-		System.out.println("*******************");
-		System.out.println("launching firefox browser");
-		driver = new FirefoxDriver();
-		driver.manage().window().maximize();
+		System.setProperty("webdriver.chrome.driver","C:/Users/vandana.c.singh/workspace/NewJenkinTest/chromedriver.exe");
+			
 	}
 	
-	@Test
+	@Test(priority=0)
 	public void testPageTitleSampleA() {
-		driver.navigate().to("http://www.google.com");
+		driver.manage().window().maximize();
+		driver.get("http://www.google.com");
 		String strPageTitle = driver.getTitle();
 		System.out.println("Page title: - "+strPageTitle);
 		Assert.assertTrue(strPageTitle.equalsIgnoreCase("Google"), "Page title doesn't match");
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void testSampleTwo() {
 		System.out.println("Im in test sample two");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void testSampleThree() {
 		System.out.println("Im in test sample three");
 	}
@@ -39,7 +39,7 @@ public class Newint {
 	@AfterClass
 	public void tearDown() {
 		if(driver!=null) {
-			System.out.println("Closing firefox browser");
+			System.out.println("Closing chrome browser");
 			driver.quit();
 		}
 	}

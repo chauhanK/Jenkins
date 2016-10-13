@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084" duration-ms="65917" started-at="2016-09-27T11:16:21Z" finished-at="2016-09-27T11:17:27Z">
+  <suite name="jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084" duration-ms="35872" started-at="2016-10-07T12:56:38Z" finished-at="2016-10-07T12:57:14Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="65917" started-at="2016-09-27T11:16:21Z" finished-at="2016-09-27T11:17:27Z">
+    <test name="Command line test" duration-ms="35872" started-at="2016-10-07T12:56:38Z" finished-at="2016-10-07T12:57:14Z">
       <class name="jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084@4de8b406]" name="beforeMethod" is-config="true" duration-ms="63209" started-at="2016-09-27T11:16:21Z" finished-at="2016-09-27T11:17:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084@4de8b406]" name="beforeMethod" is-config="true" duration-ms="33343" started-at="2016-10-07T12:56:38Z" finished-at="2016-10-07T12:57:11Z">
         </test-method>
-        <test-method status="PASS" signature="SignupPage_Multiple_Field_Blank()[pri:0, instance:jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084@4de8b406]" name="SignupPage_Multiple_Field_Blank" duration-ms="395" started-at="2016-09-27T11:17:24Z" finished-at="2016-09-27T11:17:25Z">
+        <test-method status="PASS" signature="SignupPage_Multiple_Field_Blank()[pri:0, instance:jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084@4de8b406]" name="SignupPage_Multiple_Field_Blank" duration-ms="182" started-at="2016-10-07T12:57:11Z" finished-at="2016-10-07T12:57:11Z">
         </test-method>
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084@4de8b406]" name="afterMethod" is-config="true" duration-ms="2288" started-at="2016-09-27T11:17:25Z" finished-at="2016-09-27T11:17:27Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084@4de8b406]" name="afterMethod" is-config="true" duration-ms="2336" started-at="2016-10-07T12:57:11Z" finished-at="2016-10-07T12:57:14Z">
           <params>
             <param index="0">
               <value>

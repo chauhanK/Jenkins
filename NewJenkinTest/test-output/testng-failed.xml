@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jenkins.Trident_SignupPage_Blank_Field_Validation_85633">
+      <class name="jenkins.Newint">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="SignupPage_Multiple_Field_Blank"/>
+          <include name="testPageTitleSampleA"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- jenkins.Trident_SignupPage_Blank_Field_Validation_85633 -->
+      </class> <!-- jenkins.Newint -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
