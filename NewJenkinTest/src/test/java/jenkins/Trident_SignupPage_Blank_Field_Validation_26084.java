@@ -17,9 +17,9 @@ import org.testng.annotations.Test;
 import application_Controller.SignUpPageController;
 import constants.IResourceConstant;
 import integration.testrail.ExcelReportGenerator;
-import jenkins.TestTrident_SignupPage_Blank_Field_Validation_26084;
-public class TestTrident_SignupPage_Blank_Field_Validation_26084 {
-	private Logger Log = Logger.getLogger(TestTrident_SignupPage_Blank_Field_Validation_26084.class.getName());
+import jenkins.Trident_SignupPage_Blank_Field_Validation_26084;
+public class Trident_SignupPage_Blank_Field_Validation_26084 {
+	private Logger Log = Logger.getLogger(Trident_SignupPage_Blank_Field_Validation_26084.class.getName());
 
 	@BeforeMethod
 	 public void beforeMethod() throws InterruptedException {

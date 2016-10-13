@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Newint {
+public class TestNewint {
 	WebDriver driver = new ChromeDriver();
 	
 	@BeforeClass
