@@ -7,6 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestNewint {
 	WebDriver driver = new ChromeDriver();
@@ -14,6 +16,9 @@ public class TestNewint {
 	@BeforeClass
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/Demo/NewJenkinTest/chromedriver");
+		DesiredCapabilities Capability = DesiredCapabilities.chrome();
+		Capability.setPlatform(org.openqa.selenium.Platform.ANY);
+		RemoteWebDriver browser=new RemoteWebDriver(new URL(nodeURL),Capability);
 		
 		
 		
