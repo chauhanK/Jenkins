@@ -13,7 +13,7 @@ public class TestNewint {
 	
 	@BeforeClass
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver","C:/Users/karan.chauhan/workspace/NewJenkinTest/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\karan.chauhan\\workspace\\NewJenkinTest\\chromedriver");
 			
 	}
 	
