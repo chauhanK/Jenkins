@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jenkins.Newint">
+      <class name="jenkins.TestNewint">
         <methods>
-          <include name="testPageTitleSampleA"/>
-          <include name="tearDown"/>
+          <include name="testSampleThree"/>
+          <include name="testSampleTwo"/>
           <include name="setUp"/>
+          <include name="testPageTitleSampleA"/>
         </methods>
-      </class> <!-- jenkins.Newint -->
+      </class> <!-- jenkins.TestNewint -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

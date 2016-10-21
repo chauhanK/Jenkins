@@ -3,6 +3,8 @@ package jenkins;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -13,8 +15,10 @@ public class TestNewint {
 	
 	@BeforeClass
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver","C:/Users/karan.chauhan/workspace/NewJenkinTest/chromedriver.exe");
-			
+		System.setProperty("webdriver.chrome.driver","C:/Users/vandana.c.singh/workspace/NewJenkinTest/chromedriver.exe");
+		DesiredCapabilities	Capability=DesiredCapabilities.chrome();
+		Capability.setPlatform(org.openqa.selenium.Platform.ANY);
+		RemoteWebDriver browser=new RemoteWebDriver(Capability); 	
 	}
 	
 	@Test(priority=0)
