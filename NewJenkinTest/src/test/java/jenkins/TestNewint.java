@@ -14,16 +14,14 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
+	new DesiredCapabilities();	
+	DesiredCapabilities Capability=DesiredCapabilities.chrome();
+	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
+	WebDriver driver=new RemoteWebDriver(Capability); 
 	
 	@BeforeClass
 	public void setUp() {
-                new DesiredCapabilities();
-		System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
-		DesiredCapabilities Capability=DesiredCapabilities.chrome();
-		Capability.setPlatform(org.openqa.selenium.Platform.ANY);
-		WebDriver driver=new RemoteWebDriver(Capability); 	
-		
-				
+        System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
 	}
 	
 	@Test(priority=0)
