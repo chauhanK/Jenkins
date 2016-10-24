@@ -18,18 +18,11 @@ public class TestNewint {
 	
 	@BeforeClass
 	public WebDriver setUp() {
-        System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
-	ChromeDriverService service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File("\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver"))
-                .usingAnyFreePort()
-                .build();
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
-	}
+       new DesiredCapabilities();	
+	System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
+	DesiredCapabilities Capability=DesiredCapabilities.chrome();
+	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
+	WebDriver driver=new WebDriver(Capability); 
 	
 	@Test(priority=0)
 	public void testPageTitleSampleA() {
