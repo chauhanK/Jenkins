@@ -14,18 +14,19 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
-	DesiredCapabilities Capability=new DesiredCapabilities();	
-	DesiredCapabilities Capability=DesiredCapabilities.chrome();
-	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
-	WebDriver driver=new RemoteWebDriver(Capability); 
 	
 	@BeforeClass
 	public void setUp() {
-        System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
+        new DesiredCapabilities();	
+	System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
+	DesiredCapabilities Capability=DesiredCapabilities.chrome();
+	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
+	WebDriver driver=new RemoteWebDriver(Capability); 
 	}
 	
 	@Test(priority=0)
 	public void testPageTitleSampleA() {
+		WebDriver driver=new RemoteWebDriver(Capability); 
 		driver.manage().window().maximize();
 		driver.get("http://www.google.com");
 		String strPageTitle = driver.getTitle();
@@ -45,6 +46,7 @@ public class TestNewint {
 
 	@AfterClass
 	public void tearDown() {
+		WebDriver driver=new RemoteWebDriver(Capability); 
 		if(driver!=null) {
 			System.out.println("Closing chrome browser");
 			driver.quit();
