@@ -10,26 +10,30 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
-//import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 
 public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
 	
 	@BeforeClass
-	public void setUp() {
-        new DesiredCapabilities();	
-	System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
-	DesiredCapabilities Capability=DesiredCapabilities.chrome();
-	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
-	WebDriver driver=new WebDriver(Capability); 
+	public WebDriver setUp() {
+        System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
+	ChromeDriverService service = new ChromeDriverService.Builder()
+                .usingDriverExecutable(new File("\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver"))
+                .usingAnyFreePort()
+                .build();
+        try {
+            service.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
 	}
 	
 	@Test(priority=0)
 	public void testPageTitleSampleA() {
-	new DesiredCapabilities();
-	DesiredCapabilities Capability=DesiredCapabilities.chrome();
-	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
-	WebDriver driver=new WebDriver(Capability);  
+	  
 		driver.manage().window().maximize();
 		driver.get("http://www.google.com");
 		String strPageTitle = driver.getTitle();
@@ -49,10 +53,7 @@ public class TestNewint {
 
 	@AfterClass
 	public void tearDown() {
-	new DesiredCapabilities();
-	DesiredCapabilities Capability=DesiredCapabilities.chrome();
-	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
-	WebDriver driver=new WebDriver(Capability); 
+	
 		if(driver!=null) {
 			System.out.println("Closing chrome browser");
 			driver.quit();
