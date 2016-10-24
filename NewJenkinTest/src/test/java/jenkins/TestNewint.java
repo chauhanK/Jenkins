@@ -18,7 +18,7 @@ public class TestNewint {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","\\var\\lib\\jenkins\\workspace\\Demo\\NewJenkinTest\\chromedriver");
+		System.setProperty("webdriver.chrome.driver","\\home\\vandana\\workspace\\Jenkins\\NewJenkinTest\\chromedriver");
 		DesiredCapabilities Capability=DesiredCapabilities.chrome();
 		Capability.setPlatform(org.openqa.selenium.Platform.ANY);
 		RemoteWebDriver browser=new RemoteWebDriver(Capability); 	
