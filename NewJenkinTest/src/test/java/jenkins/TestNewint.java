@@ -16,7 +16,7 @@ public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
 	DesiredCapabilities Capability=new DesiredCapabilities();	
 	DesiredCapabilities Capability=DesiredCapabilities.chrome();
-	DesiredCapabilities Capability.setPlatform(org.openqa.selenium.Platform.ANY);
+	Capability.setPlatform(org.openqa.selenium.Platform.ANY);
 	WebDriver driver=new RemoteWebDriver(Capability); 
 	
 	@BeforeClass
