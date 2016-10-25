@@ -25,9 +25,10 @@ public class TestNewint {
 	public void setUp() throws MalformedURLException {
 	
 	new DesiredCapabilities();
+	System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
        // URL serverurl = new URL("http://localhost:9515");
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        WebDriver driver = new RemoteWebDriver("System.setProperty("webdriver.chrome.driver","/home/vandana/Jenkins/NewJenkinTest/chromedriver")",capabilities);
+        WebDriver driver = new RemoteWebDriver(capabilities);
         driver.get("http://www.google.com");
         WebElement searchEdit = driver.findElement(By.name("q"));
         searchEdit.sendKeys("Selftechy on google");
