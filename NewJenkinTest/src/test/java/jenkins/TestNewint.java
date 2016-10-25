@@ -1,6 +1,6 @@
 package jenkins;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -12,6 +12,11 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import java.io.File;
+import java.io.IOException;
+import java.net.*;
+import org.junit.*;
+import org.junit.runners.BlockJUnit4ClassRunner;
 
 public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
