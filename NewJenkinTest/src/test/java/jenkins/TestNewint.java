@@ -21,8 +21,8 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
 	
-	@BeforeClass
-	public WebDriver setUp() {
+	@Test
+	public void setUp() {
 	
 	new DesiredCapabilities();
         URL serverurl = new URL("http://localhost:9515");
