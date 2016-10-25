@@ -22,7 +22,7 @@ public class TestNewint {
 	//WebDriver driver = new ChromeDriver();
 	
 	@Test
-	public void setUp() {
+	public void setUp() throws MalformedURLException {
 	
 	new DesiredCapabilities();
         URL serverurl = new URL("http://localhost:9515");
