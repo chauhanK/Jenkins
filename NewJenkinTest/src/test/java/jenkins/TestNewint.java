@@ -18,6 +18,18 @@ public class TestNewint {
 	
 	@BeforeClass
 	public WebDriver setUp() {
+	
+	new DesiredCapabilities();
+        URL serverurl = new URL("http://localhost:9515");
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        WebDriver driver = new RemoteWebDriver(serverurl,capabilities);
+        driver.get("http://www.google.com");
+        WebElement searchEdit = driver.findElement(By.name("q"));
+        searchEdit.sendKeys("Selftechy on google");
+        searchEdit.submit();	
+	}
+		
+		/*
        new DesiredCapabilities();	
 	System.setProperty("webdriver.chrome.driver","\\home\\vandana\\Jenkins\\NewJenkinTest\\chromedriver");
 	DesiredCapabilities Capability=DesiredCapabilities.chrome();
@@ -51,6 +63,6 @@ public class TestNewint {
 			System.out.println("Closing chrome browser");
 			driver.quit();
 		}
-	}
+	}*/
 	
 }
